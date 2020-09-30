@@ -1,6 +1,64 @@
+html {
+    font-size: 10px;
+}
+
 body {
     margin: 0;
-    background: #ffffff;
+    background: #eeeeee;
+    color: #333;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+
+    }
+}
+
+h2 {
+    font-size: 3.25rem;
+}
+
+a {
+    color: #74638f;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+}
+
+#img-caption {
+    margin: 15px 0 5px 0;
+}
+
+@media (max-width: 460px) {
+    #img-caption {
+        font-size: 1.4rem;
+    }
+}
+
+#headline {
+    margin: 50px 0;
+    text-align: center;
+
 }
 
 .nav-item {
@@ -8,7 +66,7 @@ body {
 }
 
 .container {
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     width: 100%;
     display: grid;
     grid-template-areas:
@@ -21,11 +79,13 @@ body {
     grid-template-rows: auto auto auto auto auto;
 
 }
-#title{
+
+#title {
     font-size: 4em;
     font-weight: normal;
     margin: 0;
 }
+
 .sub-title {
     font-size: 1.7em;
     font-weight: normal;
@@ -42,7 +102,7 @@ a {
     background: #4e4e4e;
 }
 
-.nav-links{
+.nav-links {
     margin-left: 15vw;
 }
 
@@ -70,14 +130,7 @@ a {
     justify-content: center;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+
 .about {
     grid-area: about;
     display: flex;
@@ -88,15 +141,17 @@ img {
 
 }
 
-.about-content-text p{
+.about-content-text p {
     font-size: 1.33em;
     line-height: 30px;
 }
-.about-content-text h3{
+
+.about-content-text h3 {
     font-size: 2em;
 
 }
-.about-content-text{
+
+.about-content-text {
     width: 30vw;
 }
 
@@ -111,7 +166,7 @@ img {
     font-size: 2em;
     justify-items: center;
     justify-content: center;
-    color: rgba(255,255,255,.9);
+    color: rgba(255, 255, 255, .9);
 }
 
 .footer {
@@ -124,10 +179,12 @@ img {
     background: rgba(255, 255, 255, .9);
     justify-content: space-evenly;
 }
-.footer a{
+
+.footer a {
     color: #747474;
 }
-footer h4{
+
+footer h4 {
     font-size: 1.1em;
 
 }
