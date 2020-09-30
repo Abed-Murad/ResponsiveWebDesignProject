@@ -7,14 +7,14 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="container">
+<div class="container" id="main">
 
     <nav class="nav">
         <div class="nav-links">
             <a class="nav-item" href="#">Home</a>
-            <a class="nav-item" href="#">About</a>
-            <a class="nav-item" href="#">Career</a>
-            <a class="nav-item" href="#">Achievements</a>
+            <a class="nav-item" href="#about">About</a>
+            <a class="nav-item" href="#quote">Quote</a>
+            <a class="nav-item" href="#footer">Links</a>
         </div>
     </nav>
 
@@ -24,8 +24,8 @@
     </header>
 
 
-    <div class="about">
-        <div class="about-content-text">
+    <div class="about" id="about">
+        <div class="about-content-text" id="tribute-info">
             <h3>About</h3>
             <p>Dr. Jordan B. Peterson is a professor of psychology at the University of Toronto, a clinical psychologist
                 and the author of the multi-million copy bestseller 12 Rules for Life: An Antidote to Chaos, #1 for
@@ -37,16 +37,43 @@
                 intellectual and educator.</p>
 
         </div>
-        <img src="img/jordan_peterson.jpg" alt="An image of jordan B Peterson">
+        <div id="img-div">
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Jordan_Peterson_June_2018.jpg"
+                     alt="An image of jordan B Peterson" id="image">
+                <figcaption id="img-caption">Jordan B. Peterson</figcaption>
+            </figure>
+        </div>
 
     </div>
 
-    <div class="quote">
-        <h3 class="sub-title" style="font-weight: 700; font-size: 2em;color: rgba(2,255,255,.9);" >"Clean Your Damn Room!" - Jordan Peterson</h3>
+    <div class="quote" id="quote">
+        <h3>"Clean Your Damn Room!" - Jordan Peterson</h3>
     </div>
 
-    <footer class="footer">
-        <a href="#" target="_blank">Go to Peterson Page</a>
+    <footer class="footer" id="footer">
+        <div>
+            <h4>About the author</h4>
+            <p>
+                Made by <a href="https://www.github.com/Abed-Murad">Abed Murad</a> for a Freecodecamp tribute challenge.
+            </p>
+        </div>
+        <div>
+
+
+            <h4>Techs Used</h4>
+            <p>HTML</p>
+            <p>CSS</p>
+        </div>
+        <div>
+            <h4>Links</h4>
+            <a href="https://www.jordanbpeterson.com//#" target="_blank" id="tribute-link">Dr. Jordan B Peterson
+                Webiste</a>
+            <p>
+                The design is highly inspired form the work of <a
+                    href="http://different-tribute-kazi-nazrul.surge.sh/#"> Md. Abu Tahe</a>
+            </p>
+        </div>
     </footer>
 
 </div>

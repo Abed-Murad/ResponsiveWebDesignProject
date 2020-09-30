@@ -17,7 +17,7 @@ body {
     "about about about"
     "quote-area quote-area quote-area"
     "footer footer footer";
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
 
 }
@@ -32,7 +32,7 @@ body {
     color: white !important;
 }
 
-.nav a {
+a {
     color: #eeeeee;
     text-decoration: none;
 }
@@ -51,7 +51,7 @@ body {
     background: #1b1c1d;
     display: flex;
     align-items: center;
-    min-height: 45px;
+    min-height: 55px;
     position: sticky;
     justify-content: flex-start;
     top: 0;
@@ -71,9 +71,12 @@ body {
 }
 
 img {
-    width: 25vw;
-    height: 25vw;
-    border: 1px solid rgba(0, 0, 0, .1);
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .about {
     grid-area: about;
@@ -96,18 +99,6 @@ img {
 .about-content-text{
     width: 30vw;
 }
-.footer {
-    grid-area: footer;
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #ffffff;
-    justify-items: center;
-    justify-content: center;
-
-
-}
 
 .quote {
     grid-area: quote-area;
@@ -116,8 +107,34 @@ img {
     align-items: center;
     min-height: 250px;
     background: #1b1c1d;
+    font-weight: 700;
+    font-size: 2em;
     justify-items: center;
     justify-content: center;
+    color: rgba(255,255,255,.9);
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    min-height: 350px;
+    padding-top: 5vh;
+    align-items: flex-start;
+    flex-direction: row;
+    background: rgba(255, 255, 255, .9);
+    justify-content: space-evenly;
+}
+.footer a{
+    color: #747474;
+}
+footer h4{
+    font-size: 1.1em;
 
 }
 
+
+figcaption {
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
