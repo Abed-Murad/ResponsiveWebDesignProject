@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background: #eeeeee;
+}
+
+.nav-item {
+    padding: 16px;
+}
+
+.container {
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "about about about"
+    "achievements achievements achievements"
+    "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 5vh 80vh 100vh 30vh 40vh;
+
+}
+#title{
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.nav a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    background: #4e4e4e;
+}
+
+.nav {
+    grid-area: nav;
+    background: #1b1c1d;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: flex-start;
+    top: 0;
+    z-index: 100;
+    padding-left: 12vw;
+}
+
+.header {
+    grid-area: header;
+    background: #1b1c1d;
+    display: flex;
+    color: #eeeeee;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.about {
+    grid-area: about;
+    background: red;
+}
+
+.footer {
+    grid-area: footer;
+    background: green;
+}
+
+.achievements {
+    grid-area: achievements;
+    background: saddlebrown;
+}
+
