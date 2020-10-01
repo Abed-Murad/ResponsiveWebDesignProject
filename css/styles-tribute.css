@@ -17,13 +17,6 @@ h1 {
     margin-bottom: 0;
 }
 
-@media (max-width: 460px) {
-    h1 {
-        font-size: 3.5rem;
-        line-height: 1.2;
-
-    }
-}
 
 h2 {
     font-size: 3.25rem;
@@ -33,10 +26,12 @@ a {
     color: #eeeeee;
     text-decoration: none;
 }
+
 blockquote p {
     display: inline;
     font-size: 4rem;
 }
+
 .container {
     font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
     width: 100%;
@@ -49,6 +44,20 @@ blockquote p {
     "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
+
+}
+
+@media (min-width: 460px) {
+    .container {
+        grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "header about header"
+    "quote-area quote-area quote-area"
+    "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+    }
 
 }
 
@@ -67,7 +76,6 @@ blockquote p {
 .nav-links {
     width: 30rem;
     height: 100%;
-    margin-left: 20rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -98,6 +106,15 @@ blockquote p {
     margin: 0;
 }
 
+@media (max-width: 460px) {
+    #title {
+        font-size: 3.5em;
+        font-weight: normal;
+        margin: 0;
+    }
+}
+
+
 .sub-title {
     font-size: 1.4em;
     font-weight: normal;
@@ -120,10 +137,19 @@ blockquote p {
 
 }
 
+@media (max-width: 460px) {
+    .about {
+        flex-direction: column;
+    }
+
+}
+
+
 .about-content-text p {
     text-align: start;
     font-size: 1.33em;
 }
+
 
 .about-content-text h3 {
     text-align: start;
@@ -136,6 +162,15 @@ blockquote p {
     width: 35%;
     margin-right: 10rem;
 }
+
+@media (max-width: 460px) {
+    .about-content-text {
+        width: 80%;
+        margin-right: 0rem;
+        margin-top: 2rem;
+    }
+}
+
 
 #img-div {
     max-width: 40rem;
@@ -160,10 +195,6 @@ img {
     }
 }
 
-
-
-
-
 .quote {
     grid-area: quote-area;
     display: flex;
@@ -178,7 +209,6 @@ img {
     color: rgba(255, 255, 255, .9);
 }
 
-
 .footer {
     grid-area: footer;
     display: flex;
@@ -190,6 +220,13 @@ img {
     justify-content: space-evenly;
 }
 
+@media (max-width: 460px) {
+    .footer {
+        flex-direction: column;
+        padding: 1.6rem
+    }
+}
+
 .footer a {
     color: #747474;
 }
@@ -199,6 +236,9 @@ footer h4 {
 
 }
 
+.footer-section {
+    text-align: start;
+}
 
 figcaption {
     font-style: italic;
